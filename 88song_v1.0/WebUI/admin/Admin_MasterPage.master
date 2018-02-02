@@ -1,0 +1,65 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin_MasterPage.master.cs" Inherits="admin_Admin_MasterPage" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+
+<%@ Register src="Controls/SingerType.ascx" tagname="SingerType" tagprefix="uc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="../css/MasterStyle.css" rel="Stylesheet" rev="Stylesheet" type="text/css" media="all" />
+    <script language="javascript" type="text/javascript" src="../js/Mastrer_Js.js"></script>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="bd">
+    <div id="main">
+        <div id="top">
+            在线音乐管理系统
+        </div>
+        <div id="centerDiv">
+            <div id="left">
+                <div id="lhead">管理菜单
+                </div>
+                <ul>
+                    <li><a href="Admin_HomePage.aspx">后台管理说明</a></li>
+                    <li><a href="Admin_AddSingerTypePage.aspx">歌手类型管理</a></li>
+                    <li><a href="Admin_AddMusicPage.aspx">音乐管理</a></li>
+                    <li><a href="Admin_AddSingerPage.aspx">歌手管理</a></li>
+                    <li><a href="Admin_AddMusicStyle.aspx">曲风管理</a></li>
+                    <li><a href="Admin_AddAlbum.aspx">专辑管理</a></li>
+                    <%if (Session["IsSuper"].ToString() == "Y")
+                      {%>
+                    <li><a href="Admin_AddManger.aspx">安全管理</a></li>
+                    <%} %>
+                    <li><a href="Admin_AlterPassword.aspx">修改密码</a></li>
+                </ul>
+            </div>
+            <div id="right">
+                <form id="form1" runat="server">
+                <asp:ToolkitScriptManager runat="server">
+                </asp:ToolkitScriptManager>
+                    <div id="welcomeDiv">
+                        欢迎您，尊敬的<%if(Session["IsSuper"].ToString() =="Y")
+                         {%><font color="red">超级管理员</font>，<a href="Admin_AlterPassword.aspx"><%=Session["MangerUserName"].ToString()%></a>
+                         <%}
+                         else
+                         {                             %>
+                               <font color="green">管理员</font>,<a href="Admin_AlterPassword.aspx"><%=Session["MangerUserName"].ToString()%></a>
+                        <% }%><asp:LinkButton ID="LBtnLogOut" runat="server" 
+                            onclick="LBtnLogOut_Click">注销</asp:LinkButton>
+                    </div>
+                    <div>
+                        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="bottom">
+        </div>
+    </div>
+</body>
+</html>

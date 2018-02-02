@@ -1,0 +1,122 @@
+﻿body {text-align:center; width:1004px; height:auto; margin:0px auto; padding:0px;}
+#main{ text-align:left; margin:0px; padding:0px;}
+
+/*top*/
+#logoTopArea{ background-color:#343434; width:1004px; height:24px;}
+#logoTop{ background-image:url("../Images/logo1.jpg"); width:251px; height:24px; float:left;}
+#flowerTop{ background-image:url("../Images/huawen.jpg");width:99px; height:24px;float:right;margin-right:200px; display:inline;}
+#welcome{ float:left; width:450px; height:24px;}
+#Link{ color:Red; text-decoration:none; text-decoration:blink;}
+#logoArea{background-image:url("../Images/logobg.jpg"); width:1004px; height:119px;}
+#logo{background-image:url("../Images/logo2.jpg"); width:251px; height:86px; float:left;}
+#logotwo{ background-image:url("../Images/topfont.jpg"); margin-right:50px; width:555px; height:87px; float:left; display:inline;}
+#menuArea{ background-image:url("../Images/menu.jpg"); width:1004px; height:42px;}
+#menuArea ul{ list-style:none outside none; margin:0px; width:1004px; height:24px; padding:0px;}
+#menuArea ul li{ float:left;text-align:center; padding-top:8px; width:200px;}
+#menuArea ul li a{ text-decoration:none; color:#000; font-weight:bold;}
+#menuArea ul li a:hover{ color:#ff1074;font-weight:bold;}
+#menuArea ul li div{ width:980px; height:23px; background-image:url("../Images/navbg.jpg"); position:absolute; text-align:left;}
+.menuArea_Album{ margin-left:-190px; visibility:hidden; font-size:12px; padding-top:7px; color:#fff;}
+.menuArea_Singer{ margin-left:-390px; visibility:hidden; font-size:12px; padding-top:7px; color:#fff;}
+.menuArea_MusicStyle{ margin-left:-590px; visibility:hidden; font-size:12px; padding-top:7px; color:#fff;}
+.menuArea_RankingList{ margin-left:-790px; visibility:hidden; font-size:12px; padding-top:7px; color:#fff;}
+#menuArea ul li div span a{ font-size:12px; color:#fff;font-weight:normal;}
+#menuArea ul li div span a:hover{color:#ff1074;font-weight:normal;}
+
+/*mid*/
+a{ text-decoration:none; color:#707070;}
+a:hover{ color:#ff1074;}
+#mid{ background-color:#f7f7f7; width:1004px; height:auto;}
+#hotAlbum{ width:638px; height:301px; border:1px solid #e4e4e4; float:left;}
+.title{ background-image:url("../Images/collectmenu.jpg"); padding-left:10px; font-weight:bold; color:#636363;}
+.hotAlbumUnit{ float:left; padding-top:13px; width:106px; height:114px;}
+.Photo{ width:80px; height:80px; margin:0px auto;}
+.imgFrame{padding:3px; width:70px; height:70px;}
+.singerName,.albumName{ font-size:12px; text-align:center;}
+#jiange1{ width:10px; height:301px; float:left;}
+#newAlbum{ width:352px; height:301px; border:1px solid #e4e4e4; float:left;}
+.newAlbum{ padding-top:7px; margin:0px auto; width:302px; height:80px; border-bottom:1px solid #ddd;}
+.newPhoto{ width:80px; height:80px; margin:0px auto; float:left;}
+.newMusicContent{ width:220px; height:70px; float:left; padding-top:3px;}
+.newAlbumName,.newSingerName,.publish{ font-size:12px; margin:5px;}
+.heng{width:1004px;height:10px;float:left;}
+.music{ float:left; width:313px; height:315px; border:1px solid #e4e4e4;}
+.titles{ height:30px; width:313px; float:left; padding:opx; margin:0px;background-image:url("../Images/collectmenu.jpg");}
+.select{ height:30px; width:75px; background-image:url("../Images/pinklingt.jpg"); float:left; font-size:13px; font-weight:bold; color:#fff; padding-top:4px; text-align:center;}
+.noSelect{height:30px; width:75px; float:left; font-size:13px; font-weight:bold; padding-top:4px; background-image: url("../Images/garymenu.jpg"); text-align:center; color:#636363;}
+.more{ font-size:12px; padding-top:4px; padding-right:8px; float:right; color:#636363;}
+.Detail_Music{ width:313px; height:26px; float:left; font-size:12px;}
+.Music_Select{ width:20px; height:23px; padding-top:8px; padding-left:8px; float:left;}
+.selectMusic{ font-size:12px; padding-left:10px; padding-top:5px; float:left;}
+.musicOperate{ float:right; padding-right:10px; padding-top:5px;}
+.MusicName{ width:120px; height:18px; float:left; padding-left:8px; padding-top:8px;}
+.Music_SingerName{ width:93px; height:18px; float:left; padding-left:8px; padding-top:8px;}
+.Music_Play{ width:40px; height:18px; float:left; padding-top:10px; padding-left:8px;}
+#newMusic{ display:none;}
+#KoreaMusic{display:none;}
+#OccidentMusic{display:none;}
+.jiange2{ width:10px; height:315px; float:left;}
+#news{width:352px; height:315px; border:1px solid #e4e4e4; float:left;}
+.newsTitle{ background-image:url("../Images/collectmenu.jpg"); height:30px;}
+.newsfont{ font-weight:bold; color:#636363; padding-left:10px; padding-top:3px;}
+#newsPic{ padding-top:8px; width:307px; height:103px; margin:0px auto;}
+#newsNotic{ width:307px; height:19px; margin:0px auto; background-color:#ededed;}
+.newsTitle{ padding-left:10px; font-size:12px; color:#456da8; text-decoration:underline;}
+.newsDetail{ width:307px; height:60px; padding-top:8px; line-height:18px; margin:0px auto;}
+#newsContent{ font-size:12px; color:#4c4c4c;}
+#contentDetail{ font-size:12px; text-decoration:underline; color:#456da8;}
+#newsbottom{ width:307px; height:80px; padding-top:5px; margin:0px auto;}
+#newsboImg{ width:103px; height:80px; float:left;}
+#newsboContent{ width:204px; height:80px; float:left;}
+#newsboTitle{ padding-left:10px;}
+a.Pink{ font-size:13px; font-weight:bold; color:#e01466; text-decoration:none;}
+a.Pink:hover{font-size:13px; font-weight:bold; color:#e01466; text-decoration:underline;}
+#newsbocontent{ padding-left:10px; padding-top:1px; line-height:18px; color:#4c4c4c; font-size:12px; float:left;}
+.sky{ height:650px; font-size:medium; padding-top:10px; text-align:center;}
+
+/*DetailAlbumPage*/
+#Detail_Album{ font-size:12px; color:#4a4a4a; float:left; width:720px;}
+#Detail_AlbumSummary{ width:700px; height:600; padding:5px 5px 5px 10px; float:left; border:1px solid #e4e4e4;float:left;}
+.AlbumPhoto{ width:150px; height:250px; float:left; padding-left:10px; padding-top:10px;}
+.SingerPhoto{ width:120px; width:120px;}
+.AlbumData{ width:250px; height:30px; float:left; padding-left:10px; padding-top:10px;}
+.AlbumHeng{ width:700px; height:5px; float:left;}
+#AlbumMusic{ width:690px;border:1px solid #e4e4e4;float:left; padding:5px 5px 5px 20px;}
+#AlbumTitle{ font-size:14px; font-weight:bold; color:#4a4a4a; float:left;}
+.AlbumHeng2{ width:680px; height:40px; float:left;}
+.noMusic{ float:left;}
+#AlbumListTitle{ width:690px; height:21px; background-color:#eee; float:left;padding-top:5px;text-align:right;}
+#AlbumMusicNameTitle{ width:130px; float:left; }
+#AlbumSingerNameTitle{ width:300px; float:left;}
+#AlbumListenTitle{ width:230px; float:left;}
+.AlbumOption{ width:55px; float:left; text-align:right; padding-right:5px; padding-top:2px;}
+.Number{ width:20px; float:left; text-align:right; padding-right:5px; padding-top:5px;}
+.AlbumMusicList{ border-bottom:1px solid #eee; float:left; width:690px;}
+.AlbumMusicName{ width:310px; float:left; text-align:left; padding-top:5px;}
+.AlbumSingerName{ width:200px; float:left; text-align:left; padding-top:5px;}
+.AlbumMusicListen{ width:60px; float:left; text-align:right; padding-top:5px;}
+.AlbumHeng3{ width:1004px; height:5px; float:left;}
+#AlbumOperate{ width:690px; height:30px; padding-top:5px; float:left; text-align:right;}
+.hotMusic,.SingerHotMusic{ width:280px; height:330px; border:1px solid #e4e4e4; float:right;}
+.AlbumHeng4{ width:280px; height:5px; float:left;}
+
+/*HotAlbumPage*/
+.Detail_ListBorder{ font-size:12px; color:#4a4a4a; float:left; width:708px; border:1px solid #e4e4e4;}
+.Detail_ListFont{ font-size:medium;}
+.Detail_ListEntrety{ padding:0px;}
+.Detail_List{ width:234px; height:80px; border:1px solid #ccc; float:left;}
+.Detail_ListName{ width:180px; height:25px; padding-top:3px; padding-left:10px; float:left;}
+
+/*AboutPage*/
+#About_Title{ width:1004px; font-size:50px; text-align:center;}
+#About_Content{ font-size:medium; width:1004px; height:500px;}
+
+
+/*bottom*/
+#bottom{ float:left;}
+#bottomBG{ width:1004px; height:73px; background-color:#e0e0e0;}
+#bottomFont{ float:left; text-align:left; color:#6c6c6c; margin:18px 0px 0px 16px; font-size:12px; width:449px; height:48px;}
+#copyright{ line-height:33px;}
+#bglogo{ width:171px; height:73px; float:right;}
+
+

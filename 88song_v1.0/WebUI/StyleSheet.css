@@ -1,0 +1,46 @@
+﻿body {
+}
+.UnitDivTitleDiv
+{
+    width:600px;
+    background-color:Green;
+    overflow:hidden;
+    float:left;
+    font-size:20px;
+    font-weight:bold;
+    color:White;
+    }
+.UnitDivContentDiv
+{
+    background-color:Red;
+    width:600px;
+    overflow:hidden;
+    float:left;
+    }
+.MainDiv
+{
+    background-color:Blue;
+    width:1000px;
+    overflow:hidden;
+    float:left;
+    }
+.LeftDiv
+{
+    background-color:Gray;
+    width:200px;
+    margin-left:30px;
+    margin-top:50px;
+    overflow:hidden;
+    float:left;
+    border:1px dashed #808080;
+    }
+ .Right
+ {
+     background-color:Orange;
+     width:610px;
+     margin-left:30px;
+     margin-top:50px;
+     overflow:hidden;
+     float:left;
+     border:1px dashed #808080;
+     }

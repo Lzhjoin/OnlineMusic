@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{EB92A3FA-9F45-42ED-A619-ED2783B05C21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{4CA91BF3-E8F9-451C-8446-AD53AA4412F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{ACD9549C-A407-42CA-9D3D-84ACCED7BFFB}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WebUI(1)", "WebUI\", "{BE1F3714-0C4A-4D85-AB72-60E89C1EA8CF}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		ProjectReferences = "{ACD9549C-A407-42CA-9D3D-84ACCED7BFFB}|BLL.dll;{4CA91BF3-E8F9-451C-8446-AD53AA4412F0}|DAL.dll;{EB92A3FA-9F45-42ED-A619-ED2783B05C21}|Model.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/WebUI"
+		Debug.AspNetCompiler.PhysicalPath = "WebUI\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\WebUI\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/WebUI"
+		Release.AspNetCompiler.PhysicalPath = "WebUI\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\WebUI\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "53472"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wedUI测试", "wedUI测试\wedUI测试.csproj", "{FC8AC065-0624-4FDD-B629-9136C9B49241}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB92A3FA-9F45-42ED-A619-ED2783B05C21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB92A3FA-9F45-42ED-A619-ED2783B05C21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB92A3FA-9F45-42ED-A619-ED2783B05C21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB92A3FA-9F45-42ED-A619-ED2783B05C21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CA91BF3-E8F9-451C-8446-AD53AA4412F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CA91BF3-E8F9-451C-8446-AD53AA4412F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CA91BF3-E8F9-451C-8446-AD53AA4412F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CA91BF3-E8F9-451C-8446-AD53AA4412F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACD9549C-A407-42CA-9D3D-84ACCED7BFFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACD9549C-A407-42CA-9D3D-84ACCED7BFFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACD9549C-A407-42CA-9D3D-84ACCED7BFFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACD9549C-A407-42CA-9D3D-84ACCED7BFFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE1F3714-0C4A-4D85-AB72-60E89C1EA8CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE1F3714-0C4A-4D85-AB72-60E89C1EA8CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE1F3714-0C4A-4D85-AB72-60E89C1EA8CF}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE1F3714-0C4A-4D85-AB72-60E89C1EA8CF}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{FC8AC065-0624-4FDD-B629-9136C9B49241}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC8AC065-0624-4FDD-B629-9136C9B49241}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC8AC065-0624-4FDD-B629-9136C9B49241}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC8AC065-0624-4FDD-B629-9136C9B49241}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

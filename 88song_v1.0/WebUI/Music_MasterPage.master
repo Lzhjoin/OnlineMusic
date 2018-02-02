@@ -1,0 +1,94 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Music_MasterPage.master.cs" Inherits="Music_MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="css/Client_StyleSheet.css" rel="Stylesheet" rev="Stylesheet" type="text/css" media="all" />
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="js/Client_JS.js" type="text/javascript" language="javascript"></script>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="main">
+        <div id="top">
+            <div id="logoTopArea">
+                <div id="logoTop"></div>
+                <div id="welcome"><marquee direction="left" scrollamount="3" onmouseover="this.stop()" onmouseout="this.start()"><a href="#" id="Link">欢  迎  光  临  88song.com  在  线  音  乐  下  载  网  站</a></marquee></div>
+                <div id="flowerTop"></div>
+            </div>
+            <div id="logoArea">
+                <div id="logo"></div>
+                <div id="logotwo"></div>
+            </div>
+            <div id="menuArea">
+                <ul>
+                    <li><a href="HomePage.aspx">首页</a></li>
+                    <li><a class="nav" id="nav_AlbumTitle" href="#">专辑</a>
+                        <div class="menuArea_Album">
+                            <span>|<a href="NewAlbumPage.aspx" class="a_nav">最新专辑</a>|<a href="HotAlbumPage.aspx">热门专辑</a>|</span>
+                        </div>
+                    </li>
+                    <li><a class="nav" href="#">歌手</a>
+                        <div class="menuArea_Singer">
+                            <span>|
+                            <%for (int i = 0; i < ds_SingerType.Tables[0].Rows.Count; i++)
+                              {%>
+                            <a href="SingerTypePage.aspx?SingerTypeID=<%=ds_SingerType.Tables[0].Rows[i]["SingerTypeID"] %>"><%=ds_SingerType.Tables[0].Rows[i]["SingerTypeName"]%></a>|
+                            <%} %>
+                            </span>
+                        </div>
+                    </li>
+                    <li><a class="nav" href="#">曲风</a>
+                        <div class="menuArea_MusicStyle">
+                            <span>|
+                            <%for (int i = 0; i < ds_MusicStyle.Tables[0].Rows.Count; i++)
+                              {%>
+                            <a href="MusicStylePage.aspx?MusicStyleID=<%=ds_MusicStyle.Tables[0].Rows[i]["MusicStyleID"] %>"><%=ds_MusicStyle.Tables[0].Rows[i]["MusicStyleName"]%></a>|
+                            <%} %>
+                            </span>
+                        </div>
+                    </li>
+                    <li><a class="nav" href="#">排行榜</a>
+                        <div class="menuArea_RankingList">
+                            <span>|<a href="NewMusicPage.aspx" class="a_nav">最新歌曲</a>|<a href="HotMusicPage.aspx">热门歌曲</a>|</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="mid">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        </div>
+        <div id="bottom">
+            <div id="bottomBG">
+                <div id="bottomFont">
+                    <a href="AboutPage.aspx">网站简介</a> |
+                    <a href="AboutPage.aspx">关于我们</a> |
+                    <a href="AboutPage.aspx">诚聘英才</a> |
+                    <a href="AboutPage.aspx">合作伙伴</a> |
+                    <a href="AboutPage.aspx">设为主页</a> |
+                    <a href="AboutPage.aspx">收藏</a> |
+                    <a href="AboutPage.aspx">投诉</a> |
+                    <a href="AboutPage.aspx">客服</a>
+                    <span id="copyright">88Song音乐版权所有 CopyRignht By 2009</span>
+                </div>
+                <div id="bglogo"><img src="Images/bglogo.jpg" /></div>
+            </div>
+        </div>
+    </div>
+    </form>
+    <!-- Baidu Button BEGIN -->
+    <script type="text/javascript" id="bdshare_js" data="type=slide&amp;img=7&amp;pos=right&amp;uid=6627698" ></script>
+    <script type="text/javascript" id="bdshell_js"></script>
+    <script type="text/javascript">
+        document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date() / 3600000);
+    </script>
+    <!-- Baidu Button END -->
+</body>
+</html>
